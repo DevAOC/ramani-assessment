@@ -19,8 +19,6 @@ Route - /api/ping
 
 Response - Code 200 with success boolean
 
-### GET
-
 Route - /api/posts
 
 **Tag parameter required**
@@ -28,3 +26,9 @@ Route - /api/posts
 Response - Code 200 with all posts associated to tag parameter
 
 NOTE - Response can be sorted by direction specified and field specified.
+
+## Notes
+
+I encountered bugs while testing. This was both when writing the tests and understanding the nuances of express.
+
+With the reduce function I was able to achieve a time and space complexity of O(n). With the limited time I had, I could not find a faster solution.
